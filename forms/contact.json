@@ -1,0 +1,19 @@
+{
+  "slug": "contact",
+  "title": "Talk to us",
+  "intro": "Tell us the one job you do by hand every week. We reply within one working day.",
+  "submitLabel": "Send",
+  "thanks": "Got it. You will hear from a person, not a bot, within one working day.",
+  "fields": [
+    { "name": "full_name", "label": "Your name", "type": "short_text", "required": true, "width": "half" },
+    { "name": "email", "label": "Work email", "type": "email", "required": true, "width": "half" },
+    { "name": "company", "label": "Business", "type": "short_text", "required": false },
+    { "name": "the_job", "label": "The job you do by hand every week", "type": "long_text", "required": true,
+      "placeholder": "Every Monday I copy the unpaid invoices from Xero into a sheet and email each customer...",
+      "maxWords": 200 },
+    { "name": "tools", "label": "Which of these do you use?", "type": "multi_select", "required": false,
+      "options": ["Shopify", "Stripe", "Xero", "QuickBooks", "HubSpot", "Google Workspace", "ClickUp", "Slack", "Other"] },
+    { "name": "other_tool", "label": "Which other tool?", "type": "short_text", "required": false,
+      "showWhen": { "field": "tools", "is": ["Other"] } }
+  ]
+}

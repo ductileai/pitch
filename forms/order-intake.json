@@ -1,0 +1,20 @@
+{
+  "slug": "order",
+  "title": "Place an order",
+  "intro": "Orders placed before 2 p.m. ship the same day.",
+  "submitLabel": "Place order",
+  "thanks": "Order received. This page shows its status; we also email you the confirmation.",
+  "fields": [
+    { "name": "customer", "label": "Business name", "type": "short_text", "required": true },
+    { "name": "email", "label": "Email for the confirmation", "type": "email", "required": true, "width": "half" },
+    { "name": "phone", "label": "Phone", "type": "phone", "required": false, "width": "half" },
+    { "name": "product", "label": "Product", "type": "single_select", "required": true,
+      "options": ["Starter case (12)", "Trade case (48)", "Pallet (480)"] },
+    { "name": "quantity", "label": "How many", "type": "number", "required": true, "width": "half" },
+    { "name": "delivery_date", "label": "Deliver by", "type": "date", "required": true, "width": "half" },
+    { "name": "address", "label": "Delivery address", "type": "address", "required": true },
+    { "name": "po_number", "label": "Your PO number", "type": "short_text", "required": false,
+      "help": "Printed on the invoice if given." },
+    { "name": "notes", "label": "Delivery notes", "type": "long_text", "required": false, "maxChars": 500 }
+  ]
+}

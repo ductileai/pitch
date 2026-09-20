@@ -1,0 +1,15 @@
+{
+  "slug": "feedback",
+  "title": "How was it?",
+  "intro": "Thirty seconds. Every answer is read.",
+  "submitLabel": "Send",
+  "thanks": "Thank you. The team sees this within the hour.",
+  "fields": [
+    { "name": "rating", "label": "Overall", "type": "rating", "required": true },
+    { "name": "best_part", "label": "The best part", "type": "short_text", "required": false },
+    { "name": "would_return", "label": "Would you come again?", "type": "yes_no", "required": true },
+    { "name": "why_not", "label": "What would change your mind?", "type": "long_text", "required": false,
+      "showWhen": { "field": "would_return", "is": ["no"] } },
+    { "name": "email", "label": "Email, if you would like a reply", "type": "email", "required": false }
+  ]
+}

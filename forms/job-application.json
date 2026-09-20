@@ -1,0 +1,21 @@
+{
+  "slug": "apply",
+  "title": "Apply to work with us",
+  "intro": "Two pages, five minutes. Save and finish later if you need to.",
+  "submitLabel": "Apply",
+  "thanks": "Application received. Your status page stays live until we have replied.",
+  "fields": [
+    { "name": "full_name", "label": "Full name", "type": "short_text", "required": true, "width": "half" },
+    { "name": "email", "label": "Email", "type": "email", "required": true, "width": "half" },
+    { "name": "phone", "label": "Mobile", "type": "phone", "required": false, "width": "half" },
+    { "name": "linkedin", "label": "LinkedIn profile", "type": "url", "required": false, "urlHost": "linkedin.com", "width": "half" },
+    { "name": "role", "label": "Role", "type": "single_select", "required": true,
+      "options": ["Bookkeeper", "Operations coordinator", "Customer support", "Sales"] },
+    { "name": "page_2", "label": "About you", "type": "page", "required": false },
+    { "name": "cv", "label": "CV", "type": "file", "required": true, "accepts": ["document"], "maxFiles": 1 },
+    { "name": "start_date", "label": "Earliest start", "type": "date", "required": true, "width": "half" },
+    { "name": "salary", "label": "Expected salary", "type": "money", "required": false, "width": "half" },
+    { "name": "why", "label": "Why this role?", "type": "long_text", "required": true, "maxWords": 300 },
+    { "name": "remote_ok", "label": "Happy to work remotely?", "type": "yes_no", "required": true }
+  ]
+}
